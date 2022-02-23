@@ -1,20 +1,17 @@
+import { Box, Center, VStack } from "native-base";
 import React from "react";
-import { StyleSheet, Text, Image } from "react-native";
+import { Text, Image } from "react-native";
+import styles from "../styles";
 
 const TripItem = ({ trip }) => {
   return (
-    <>
-      <Image source={{ uri: trip.image }} style={styles.image} />
-      <Text>{trip.title}</Text>
-    </>
+    <Center>
+      <VStack>
+        <Image style={styles.image} source={{ uri: trip.image }} />
+        <Text style={styles.tripTitle}>{trip.title}</Text>
+      </VStack>
+    </Center>
   );
 };
 
 export default TripItem;
-
-const styles = StyleSheet.create({
-  image: {
-    height: 100,
-    width: 100,
-  },
-});
