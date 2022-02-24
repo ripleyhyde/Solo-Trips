@@ -1,4 +1,4 @@
-import { ImageBackground } from "react-native";
+import { ImageBackground, View, Text } from "react-native";
 import React from "react";
 import TripItem from "./TripItem";
 import styles from "../styles";
@@ -13,14 +13,14 @@ const TripList = () => {
   ));
 
   return (
-    <ImageBackground
-      source={{
-        uri: "https://cdn1.epicgames.com/epic/offer/Journey_SmallSize-2580x1450-75345be2b7101291982f1dcfcedaadbd.jpg",
-      }}
-      style={styles.backgoundImage}
-    >
-      <VStack style={styles.list}>{tripList}</VStack>
-    </ImageBackground>
+    // <ImageBackground
+    //   source={{
+    //     uri: "https://cdn1.epicgames.com/epic/offer/Journey_SmallSize-2580x1450-75345be2b7101291982f1dcfcedaadbd.jpg",
+    //   }}
+    //   style={styles.backgoundImage}
+    // >
+    <VStack style={styles.list}>{tripList}</VStack>
+    // </ImageBackground>
   );
 };
 

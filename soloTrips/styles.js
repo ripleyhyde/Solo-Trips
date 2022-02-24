@@ -3,7 +3,6 @@ import { StyleSheet } from "react-native";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
@@ -34,8 +33,48 @@ const styles = StyleSheet.create({
   list: {
     marginTop: 81,
   },
+
+  //TripDetail
+  detailsImage: {
+    display: "flex",
+    height: 350,
+    width: 350,
+    borderRadius: 200,
+    marginBottom: 26,
+  },
+  detailsDescription: {
+    marginBottom: 190,
+    maxHeight: 80,
+    width: 400,
+    margin: 12,
+    borderWidth: 1,
+    padding: 10,
+    backgroundColor: "#cd853f40",
+    fontSize: 30,
+    fontFamily: "Papyrus",
+    borderRadius: 20,
+  },
+  detailsTitle: {
+    fontFamily: "Papyrus",
+    fontSize: 70,
+    textDecorationLine: "underline",
+    marginBottom: 20,
+    fontSize: 50,
+    textAlign: "center",
+  },
+
+  //TripCreate
+  createTitle: {
+    fontFamily: "Papyrus",
+    fontSize: 50,
+    textAlign: "center",
+    textDecorationLine: "underline",
+    marginTop: 150,
+    marginLeft: 10,
+    marginRight: 10,
+  },
   formName: {
-    marginTop: 250,
+    marginTop: 30,
     marginLeft: 10,
     marginRight: 10,
     borderRadius: 10,
